@@ -32,7 +32,7 @@ public void keyPressed(){
   translate(250,-250/2 +21);
   rotate(PI/4);
   //fill((int)(Math.random()*155)+100,(int)(Math.random()*155)+100,(int)(Math.random()*155)+100);
-  fractal(250,250,450);
+  fractal(250,250,frsize - frsize/4);
   popMatrix();
   }
    if(key == 'd'){
@@ -43,12 +43,12 @@ public void keyPressed(){
     else {
       noFill();
     }
-    fractal(250,250,600);
+    fractal(250,250,frsize);
   pushMatrix();
   translate(250,-250/2 +21);
   rotate(PI/4);
   //fill((int)(Math.random()*155)+100,(int)(Math.random()*155)+100,(int)(Math.random()*155)+100);
-  fractal(250,250,450);
+  fractal(250,250,frsize - frsize/4);
   popMatrix();
   }
   if(key == 'q'){
